@@ -92,7 +92,7 @@ def visualse_largest_components(G):
     return ind_lwcc + ind_lscc
 
 
-def flow_coverage(G, H, intra=True):
+def compute_coverage(G, H, intra=True):
     """
     Input: Graph G, indicator matrix H
     Output: TFC of partition if intra is True, otherwise IFC
@@ -109,7 +109,7 @@ def flow_coverage(G, H, intra=True):
     return flow_within / total_flow
 
 
-def flow_coverage_community(G, H, intra=True):
+def compute_coverage_community(G, H, intra=True):
     """
     Input: Graph G, indicator matrix H
     Output: TFC for each community if intra is True, otherwise IFC
@@ -167,7 +167,7 @@ def node_id_to_dict(G, node_id):
     return community_dict
 
 
-def compute_containment(G, node_ids):
+def compute_nodal_containment(G, node_ids):
     """
     Input: Graph G and node_ids for partition
     Output: Vector of containment proportions of flows within communities
