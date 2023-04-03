@@ -1,6 +1,7 @@
 # exclude directories
 figures/
-data/
+data/fb_movement_maps/
+data/geo_shapefiles/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
