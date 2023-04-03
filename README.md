@@ -17,3 +17,18 @@ Shape files for the UK used in this study are obtained from the Office for Natio
 We also annotate maps with UK city names.
 
 - UK Cities: https://simplemaps.com/data/gb-cities, licensed under [MIT license](https://opensource.org/license/mit/)
+
+## Cite
+
+Please cite our paper if you use this code in your own work:
+
+```
+@article{schindlerMultiscaleMobilityPatterns2023,
+  author = {Schindler, Dominik J. and Clarke, Jonathan and Barahona, Mauricio},
+  title = {Multiscale Mobility Patterns and the Restriction of Human Movement},
+  publisher = {arXiv},
+  year = {2023},
+  doi = {10.48550/arXiv.2201.06323},
+  url = {http://arxiv.org/abs/2201.06323},
+}
+```
