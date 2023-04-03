@@ -2,6 +2,7 @@
 figures/
 data/fb_movement_maps/
 data/processed/networks/
+# data/geo_shapefiles/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
