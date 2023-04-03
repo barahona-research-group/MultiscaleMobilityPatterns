@@ -5,7 +5,7 @@ Code for the paper "Multiscale mobility patterns and the restriction of human mo
 
 ### Facebook Movement Maps
 
-Data used in this study was accessed through Facebook's "Data for Good" program: https://dataforgood.facebook.com/dfg/tools/movement-maps. We use the raw data only in our first notebook, where we compute derivative data that can be used to reproduce all results of our study. The derivative data is available in the `data\processed\` directory.
+Data used in this study was accessed through Facebook's "Data for Good" program: https://dataforgood.facebook.com/dfg/tools/movement-maps. We use the raw data only in our first notebook, where we compute derivative data that can be used to reproduce all results of our study. The derivative data is available in the `data/processed/` directory.
 
 ### Geographic shape files
 
