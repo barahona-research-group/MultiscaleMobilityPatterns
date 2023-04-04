@@ -9,8 +9,7 @@ from sklearn import metrics
 
 def compute_cvrmse(signal, prediction, around=False):
     """
-    input: two timeseries
-    output: CVRMSE
+    computes CVRMSE for two sequences
     """
     signal_mean = np.mean(signal)
     CVRMSE = np.sqrt(metrics.mean_absolute_error(signal, prediction)) / signal_mean
@@ -39,7 +38,7 @@ def select_model(
 ):
     """
     input: time series and baseline value
-    output: the response function is fitted to the normalised time series and optimal response                  parameters
+    output: the response function is fitted to the normalised time series and optimal response parameters
             and CIs are returned with a model quality assesment
     """
 
@@ -110,19 +109,9 @@ def select_model(
     # Create string
     result_string = str(name) + " & "
 
-    # Add baseline value
-    # result_string += str(np.around(base_value, 3)) + " & "
-
     # Add parameters and CIs
     for i in range(len(para)):
-        # decimals = decimals
-        # decimals_enough = False
         try:
-            # while decimals_enough == False:
-            #     if np.around(ci[para[i]][1][1], decimals) == 0:
-            #         decimals += 1
-            #     else:
-            #         decimals_enough = True
             if i == 0:
                 result_string += str(np.around(ci[para[i]][1][1], decimals + 2)) + " "
                 result_string += (

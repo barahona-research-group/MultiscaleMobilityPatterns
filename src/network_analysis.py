@@ -5,7 +5,7 @@ import scipy.sparse as sp
 
 def remove_self_loops(G):
     """
-    Returns copy of graph without selfloops
+    Returns copy of graph G without selfloops
     """
     A = np.asarray(nx.adjacency_matrix(G).toarray())
     np.fill_diagonal(A, 0)
@@ -16,7 +16,7 @@ def remove_self_loops(G):
 
 def adjacency_to_binary(A):
     """
-    Computes binarised adjacency matrix
+    Computes binarised adjacency matrix of A
     """
 
     A_binary = sp.lil_matrix(A.shape)
@@ -27,8 +27,7 @@ def adjacency_to_binary(A):
 
 def visualse_largest_components(G):
     """
-    input: network G
-    output: function computed indicator for nodes in LSCC and LWCC
+    Computes indicator for nodes in LSCC and LWCC of a graph G
     """
 
     n_nodes = len(list(G.nodes()))
@@ -94,8 +93,7 @@ def visualse_largest_components(G):
 
 def compute_coverage(G, H, intra=True):
     """
-    Input: Graph G, indicator matrix H
-    Output: TFC of partition if intra is True, otherwise IFC
+    Computes coverage of partition H for graph G
     """
 
     A = nx.adjacency_matrix(G).toarray()
@@ -111,8 +109,7 @@ def compute_coverage(G, H, intra=True):
 
 def compute_coverage_community(G, H, intra=True):
     """
-    Input: Graph G, indicator matrix H
-    Output: TFC for each community if intra is True, otherwise IFC
+    Computes coverage for each community in partition H for graph G
     """
 
     coverage = []
@@ -124,12 +121,6 @@ def compute_coverage_community(G, H, intra=True):
 
         flow_within = H.transpose().dot(A).dot(H)[k, k]
         total_flow = H.transpose().dot(A)[k, :].sum()
-
-        # # coverage is 1 if there is no flow
-        # if total_flow == 0:
-        #     coverage.append(1)
-        # else:
-        #     coverage.append(flow_within / total_flow)
         coverage.append(flow_within / total_flow)
 
     return np.asarray(coverage)
@@ -137,8 +128,7 @@ def compute_coverage_community(G, H, intra=True):
 
 def compute_indicator_matrix(node_ids):
     """
-    Input: Vector of node_ids for partition
-    Output: Indicator matrix H corresponding to partition
+    Computes indicator matrix H corresponding to partition given by node id's
     """
 
     N = len(node_ids)
@@ -152,8 +142,7 @@ def compute_indicator_matrix(node_ids):
 
 def node_id_to_dict(G, node_id):
     """
-    Input: Graph G and array of node_id's
-    Output: Dictionary that maps community number to node_keys
+    Computes dictionary that maps community number to node_keys of graph G
     """
     node_keys = list(G.nodes())
     n_communities = np.max(node_id)
@@ -169,8 +158,7 @@ def node_id_to_dict(G, node_id):
 
 def compute_nodal_containment(G, node_ids):
     """
-    Input: Graph G and node_ids for partition
-    Output: Vector of containment proportions of flows within communities
+    Computes nodal containment for each node and a partition (given by node_ids) of graph G
     """
 
     N = len(node_ids)
