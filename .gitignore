@@ -2,6 +2,8 @@
 figures/
 data/fb_movement_maps/
 data/geo_shapefiles/
+data/processed/networks/base_network.npz
+data/processed/networks/base_network_lwcc.npz
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
