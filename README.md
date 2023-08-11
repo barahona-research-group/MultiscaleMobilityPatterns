@@ -11,6 +11,8 @@ Data used in this study was accessed through Facebook's "Data for Good" program:
 
 Shape files for the UK Nomenclature of Territorial Units for Statistics (NUTS), January 2018, used in this study are obtained from the Office for National Statistics licensed under the Open Government Licence v.3.0 and contain OS data © Crown copyright and database right 2023: https://geoportal.statistics.gov.uk/datasets/nuts3-jan-2018-super-generalised-clipped-boundaries-in-the-uk/explore
 
+Shape files for the Travel to Work Areas (TTWA), December 2011, used in this study are obtained from the Office for National Statistics licensed under the Open Government Licence v.3.0 and contain OS data © Crown copyright and database right 2023: https://geoportal.statistics.gov.uk/datasets/ons::travel-to-work-areas-dec-2011-super-generalised-clipped-boundaries-in-united-kingdom-2/explore
+
 We also annotate geographic maps with UK city names licensed under [MIT license](https://opensource.org/license/mit/): https://simplemaps.com/data/gb-cities, 
 
 ## Cite
