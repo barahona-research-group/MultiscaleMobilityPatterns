@@ -13,11 +13,15 @@ Shape files for the UK Nomenclature of Territorial Units for Statistics (NUTS), 
 
 Shape files for the Travel to Work Areas (TTWA), December 2011, used in this study are obtained from the Office for National Statistics licensed under the Open Government Licence v.3.0 and contain OS data © Crown copyright and database right 2023: https://geoportal.statistics.gov.uk/datasets/ons::travel-to-work-areas-dec-2011-super-generalised-clipped-boundaries-in-united-kingdom-2/explore
 
-We also annotate geographic maps with UK city names licensed under [MIT license](https://opensource.org/license/mit/): https://simplemaps.com/data/gb-cities, 
+We also annotate geographic maps with UK city names licensed under [MIT license](https://opensource.org/license/mit/): https://simplemaps.com/data/gb-cities
+
+## Multiscale clustering
+
+In this study, we use the ``PyGenStability`` python package for unsupervised multiscale clustering of the Facebook mobility data with Markov Stability analysis, including scale selection. Code and documentation are hosted on GitHub under a GNU General Public License: https://github.com/barahona-research-group/PyGenStability
 
 ## Cite
 
-Please cite our paper if you use this code in your own work:
+Please cite our paper if you use our code or data in your own work:
 
 ```
 @article{schindlerMultiscaleMobilityPatterns2023,
