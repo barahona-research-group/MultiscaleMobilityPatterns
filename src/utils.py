@@ -48,3 +48,15 @@ def variation_of_information(x, y, normalised=True):
         return (Ex + Ey - 2 * I) / (Ex + Ey - I)
     else:
         return Ex + Ey - 2 * I
+
+
+def normalised_conditional_entropy(x, y):
+    """
+    H(X|Y) = H(X) - I(X,Y) and we normalise with log(N)
+    """
+
+    N = len(x)
+    Ex = entropy(x)
+    I = metrics.mutual_info_score(x, y)
+
+    return (Ex - I) / np.log(N)
