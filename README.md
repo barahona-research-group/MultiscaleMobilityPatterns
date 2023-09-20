@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/621783079.svg)](https://zenodo.org/badge/latestdoi/621783079)
+
 # MultiscaleMobilityPatterns
 Code for the paper "Multiscale mobility patterns and the restriction of human movement" by Dominik J Schindler, Jonathan M Clarke and Mauricio Barahona: https://arxiv.org/abs/2201.06323
 
