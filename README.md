@@ -1,7 +1,7 @@
 [![DOI](https://zenodo.org/badge/621783079.svg)](https://zenodo.org/badge/latestdoi/621783079)
 
 # MultiscaleMobilityPatterns
-Code for the paper "Multiscale mobility patterns and the restriction of human movement" by Dominik J Schindler, Jonathan M Clarke and Mauricio Barahona: https://arxiv.org/abs/2201.06323
+Code for the paper "Multiscale mobility patterns and the restriction of human movement" by Juni Schindler, Jonathan M Clarke and Mauricio Barahona: https://arxiv.org/abs/2201.06323
 
 ## Data access
 
@@ -27,7 +27,7 @@ Please cite our paper if you use our code or data in your own work:
 
 ```
 @article{schindlerMultiscaleMobilityPatterns2023,
-  author = {Schindler, Dominik J. and Clarke, Jonathan and Barahona, Mauricio},
+  author = {Schindler, Juni and Clarke, Jonathan and Barahona, Mauricio},
   title = {Multiscale Mobility Patterns and the Restriction of Human Movement},
   publisher = {arXiv},
   year = {2023},
